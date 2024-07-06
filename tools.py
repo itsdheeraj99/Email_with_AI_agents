@@ -8,9 +8,7 @@ class CreateDraftTool():
   def create_draft(data):
     """
     	Useful to create an email draft.
-      The input to this tool should be a pipe (|) separated text
-      of length 3 (three), representing who to send the email to,
-      the subject of the email and the actual message.
+      
     """
     email, subject, message = data.split('|')
     gmail = GmailToolkit()
